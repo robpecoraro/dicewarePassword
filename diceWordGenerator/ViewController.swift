@@ -29,12 +29,10 @@ class ViewController: UIViewController {
         return castArray
     }
     
-    
     func dicewarePassword(myArray: Array<Int>) -> String {
         let text = "Your new dicewear password is: \(dict[myArray[0]]!)\(dict[myArray[1]]!)\(dict[myArray[2]]!)\(dict[myArray[3]]!)\(dict[myArray[4]]!)"
         return text
     }
-    
     
     @IBOutlet var passwordLabel: UILabel!
     
@@ -42,20 +40,10 @@ class ViewController: UIViewController {
         passwordLabel.text = dicewarePassword(myArray: diceRollPassword())
         
     }
-    
-    
-    
-
-    // Unique Cast using a function
-    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
 
 
